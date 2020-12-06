@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module\AbstructFactory\EnchtedFactory\BoomWall.cs" />
+    <Compile Include="DesignMode\Builder\MazeBuilder.cs" />
+    <Compile Include="DesignMode\Builder\StandardMazeBuilder.cs" />
+    <Compile Include="Module\AbstructFactory\BoomWall.cs" />
     <Compile Include="Module\Base\Direction.cs" />
     <Compile Include="Module\Base\Door.cs" />
     <Compile Include="DesignMode\AbstructFactory\EnchantedMazeFactory.cs" />
-    <Compile Include="Module\AbstructFactory\EnchtedFactory\DoorNeedingSpell.cs" />
-    <Compile Include="Module\AbstructFactory\EnchtedFactory\EnchantedRoom.cs" />
+    <Compile Include="Module\AbstructFactory\DoorNeedingSpell.cs" />
+    <Compile Include="Module\AbstructFactory\EnchantedRoom.cs" />
     <Compile Include="Module\Base\MapSite.cs" />
     <Compile Include="Module\Base\Maze.cs" />
     <Compile Include="DesignMode\AbstructFactory\MazeFactory.cs" />

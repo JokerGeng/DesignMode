@@ -31,6 +31,10 @@ namespace MazeGame
             {
                 Sides.Add(direction, mapSite);
             }
+            else
+            {
+                Sides[direction] = mapSite;
+            }
         }
         public override void Enter()
         {

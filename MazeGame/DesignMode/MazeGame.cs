@@ -60,5 +60,20 @@ namespace MazeGame
             r2.SetSide(Direction.East, factory.MakeWall());
             return maze;
         }
+
+
+        /// <summary>
+        /// builder模式
+        /// </summary>
+        /// <param name="builder"></param>
+        /// <returns></returns>
+        public Maze CreatMaze(MazeBuilder builder)
+        {
+            builder.BuildMaze();
+            builder.BuildRoom(1);
+            builder.BuildRoom(2);
+            builder.BuildDoor(1, 2);
+            return builder.GetMaze();
+        }
     }
 }
