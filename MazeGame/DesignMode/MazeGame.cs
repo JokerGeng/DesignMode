@@ -8,6 +8,10 @@ namespace MazeGame
 {
     public class MazeGame
     {
+        /// <summary>
+        /// 常规方法
+        /// </summary>
+        /// <returns></returns>
         public Maze CreatMaze()
         {
             Maze maze = new Maze();
@@ -30,6 +34,11 @@ namespace MazeGame
             return maze;
         }
 
+        /// <summary>
+        /// 抽象工厂
+        /// </summary>
+        /// <param name="factory"></param>
+        /// <returns></returns>
         public Maze CreatMaze(MazeFactory factory)
         {
             Maze maze = factory.MakeMaze();

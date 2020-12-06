@@ -43,20 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="module\BoomWall.cs" />
-    <Compile Include="module\Direction.cs" />
-    <Compile Include="module\Door.cs" />
-    <Compile Include="DesignMode\EnchantedMazeFactory.cs" />
-    <Compile Include="module\DoorNeedingSpell.cs" />
-    <Compile Include="module\EnchantedRoom.cs" />
-    <Compile Include="module\MapSite.cs" />
-    <Compile Include="module\Maze.cs" />
-    <Compile Include="DesignMode\MazeFactory.cs" />
+    <Compile Include="Module\AbstructFactory\EnchtedFactory\BoomWall.cs" />
+    <Compile Include="Module\Base\Direction.cs" />
+    <Compile Include="Module\Base\Door.cs" />
+    <Compile Include="DesignMode\AbstructFactory\EnchantedMazeFactory.cs" />
+    <Compile Include="Module\AbstructFactory\EnchtedFactory\DoorNeedingSpell.cs" />
+    <Compile Include="Module\AbstructFactory\EnchtedFactory\EnchantedRoom.cs" />
+    <Compile Include="Module\Base\MapSite.cs" />
+    <Compile Include="Module\Base\Maze.cs" />
+    <Compile Include="DesignMode\AbstructFactory\MazeFactory.cs" />
     <Compile Include="DesignMode\MazeGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="module\Room.cs" />
-    <Compile Include="module\Wall.cs" />
+    <Compile Include="Module\Base\Room.cs" />
+    <Compile Include="Module\Base\Wall.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
