@@ -12,6 +12,10 @@ namespace MazeGame
         {
             MazeGame generalMazeGame = new MazeGame();
             Maze generalGame = generalMazeGame.CreatMaze();
+
+            Maze abstructGame = generalMazeGame.CreatMaze(new MazeFactory());
+            Maze enchtedGame = generalMazeGame.CreatMaze(new EnchantedMazeFactory());
+            Console.Read();
         }
     }
 }

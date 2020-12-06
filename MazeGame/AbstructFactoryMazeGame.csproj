@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="module\BoomWall.cs" />
     <Compile Include="module\Direction.cs" />
     <Compile Include="module\Door.cs" />
     <Compile Include="DesignMode\EnchantedMazeFactory.cs" />
+    <Compile Include="module\DoorNeedingSpell.cs" />
+    <Compile Include="module\EnchantedRoom.cs" />
     <Compile Include="module\MapSite.cs" />
     <Compile Include="module\Maze.cs" />
     <Compile Include="DesignMode\MazeFactory.cs" />

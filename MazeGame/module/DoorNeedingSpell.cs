@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MazeGame
 {
-    public class Door:MapSite
+    public class DoorNeedingSpell: Door
     {
         private Room room1;
         private Room room2;
-        public Door(Room room1=null,Room room2=null)
+        public DoorNeedingSpell(Room room1 = null, Room room2 = null)
         {
             this.room1 = room1;
             this.room2 = room2;
@@ -18,12 +18,7 @@ namespace MazeGame
 
         public override void Enter()
         {
-            
-        }
 
-        public Room OtherSideFrom(Room room)
-        {
-            return null;
         }
     }
 }

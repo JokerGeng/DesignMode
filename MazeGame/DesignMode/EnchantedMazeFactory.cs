@@ -12,5 +12,15 @@ namespace MazeGame
         {
 
         }
+
+        public override Room MakeRoom(int roomid)
+        {
+            return new EnchantedRoom(roomid);
+        }
+
+        public override Door MakeDoor(Room r1, Room r2)
+        {
+            return new DoorNeedingSpell(r1, r2);
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace MazeGame
             Maze maze = factory.MakeMaze();
             Room r1 = factory.MakeRoom(1);
             Room r2 = factory.MakeRoom(2);
-            Door door = new Door(r1, r2);
+            Door door = factory.MakeDoor(r1, r2);
             maze.AddRoom(r1);
             maze.AddRoom(r2);
 
