@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DesignMode\Builder\CountMazeBuilder.cs" />
     <Compile Include="DesignMode\Builder\MazeBuilder.cs" />
     <Compile Include="DesignMode\Builder\StandardMazeBuilder.cs" />
     <Compile Include="Module\AbstructFactory\BoomWall.cs" />
