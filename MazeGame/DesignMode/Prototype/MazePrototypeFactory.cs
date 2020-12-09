@@ -21,6 +21,8 @@ namespace MazeGame
 
         public override Maze MakeMaze()
         {
+            maze.AddRoom(room1);
+            maze.AddRoom(room2);
             return (Maze)maze.Clone();
         }
 
