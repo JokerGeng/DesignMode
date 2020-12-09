@@ -46,6 +46,7 @@
     <Compile Include="DesignMode\Builder\CountMazeBuilder.cs" />
     <Compile Include="DesignMode\Builder\MazeBuilder.cs" />
     <Compile Include="DesignMode\Builder\StandardMazeBuilder.cs" />
+    <Compile Include="DesignMode\Prototype\MazePrototypeFactory.cs" />
     <Compile Include="Module\AbstructFactory\BoomWall.cs" />
     <Compile Include="Module\Base\Direction.cs" />
     <Compile Include="Module\Base\Door.cs" />

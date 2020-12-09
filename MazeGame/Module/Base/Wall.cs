@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace MazeGame
 {
-    public class Wall : MapSite
+    public class Wall : MapSite, ICloneable
     {
         public Wall()
         {
 
+        }
+
+        public object Clone()
+        {
+            return this;
         }
 
         public override void Enter()

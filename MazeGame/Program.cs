@@ -12,27 +12,28 @@ namespace MazeGame
         {
             MazeGame generalMazeGame = new MazeGame();
 
-            Maze generalGame = generalMazeGame.CreatMaze();
+            Maze generalGame = generalMazeGame.CreateMaze();
             Console.WriteLine("general maze game");
-
-            CountMazeBuilder builder;
-            builder = new CountMazeBuilder();
-            generalMazeGame.CreatMaze(builder);
-
-            Maze abstructGame = generalMazeGame.CreatMaze(new MazeFactory());
-            Console.WriteLine("abstruct factory mode general maze game");
-            Maze enchtedGame = generalMazeGame.CreatMaze(new EnchantedMazeFactory());
-            Console.WriteLine("abstruct factory mode enchted maze game");
-
-            generalMazeGame.CreatMaze(new StandardMazeBuilder());
-
-            Console.WriteLine("builder mode maze game");
-
             Console.WriteLine();
 
-            builder.GetCounts(out int roomCount, out int doorCount);
+            Maze abstructGame = generalMazeGame.CreateMaze(new MazeFactory());
+            Console.WriteLine("abstruct factory mode general maze game");
+            Maze enchtedGame = generalMazeGame.CreateMaze(new EnchantedMazeFactory());
+            Console.WriteLine("abstruct factory mode enchted maze game");
+            Console.WriteLine();
 
-            Console.WriteLine("Room:{0},Door:{1}", roomCount, doorCount);
+            Maze builderMaze1= generalMazeGame.CreateMaze(new StandardMazeBuilder());
+            Console.WriteLine("builder mode StandardBuilder maze game");
+            Maze builderMaze2= generalMazeGame.CreateMaze(new CountMazeBuilder());
+            Console.WriteLine("builder mode CountBuilder maze game");
+            Console.WriteLine();
+
+            Room r1 = new Room(1);
+            Room r2 = new Room(2);
+            MazePrototypeFactory mazePrototypeFactory = new MazePrototypeFactory(new Maze(), new Room(1),new Room(2), new Door(r1,r2), new Wall());
+            Maze prototypeMaze = generalMazeGame.CreateMaze(mazePrototypeFactory);
+            Console.WriteLine("prototype mode maze game");
+            Console.WriteLine();
 
             Console.Read();
         }

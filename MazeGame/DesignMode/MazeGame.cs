@@ -12,7 +12,7 @@ namespace MazeGame
         /// 常规方法
         /// </summary>
         /// <returns></returns>
-        public Maze CreatMaze()
+        public Maze CreateMaze()
         {
             Maze maze = new Maze();
             Room r1 = new Room(1);
@@ -39,7 +39,7 @@ namespace MazeGame
         /// </summary>
         /// <param name="factory"></param>
         /// <returns></returns>
-        public Maze CreatMaze(MazeFactory factory)
+        public Maze CreateMaze(MazeFactory factory)
         {
             Maze maze = factory.MakeMaze();
             Room r1 = factory.MakeRoom(1);
@@ -67,13 +67,25 @@ namespace MazeGame
         /// </summary>
         /// <param name="builder"></param>
         /// <returns></returns>
-        public Maze CreatMaze(MazeBuilder builder)
+        public Maze CreateMaze(MazeBuilder builder)
         {
             builder.BuildMaze();
             builder.BuildRoom(1);
             builder.BuildRoom(2);
             builder.BuildDoor(1, 2);
             return builder.GetMaze();
+        }
+
+        /// <summary>
+        /// prototype模式
+        /// </summary>
+        /// <param name="prototypeFactory"></param>
+        /// <returns></returns>
+        public Maze CreateMaze(MazePrototypeFactory prototypeFactory)
+        {
+            prototypeFactory.MakeWall();
+            prototypeFactory.MakeDoor(prototypeFactory.MakeRoom(1), prototypeFactory.MakeRoom(2));
+            return prototypeFactory.MakeMaze();
         }
     }
 }

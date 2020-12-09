@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MazeGame
 {
-    public class Door:MapSite
+    public class Door:MapSite,ICloneable
     {
         private Room room1;
         private Room room2;
@@ -14,6 +14,11 @@ namespace MazeGame
         {
             this.room1 = room1;
             this.room2 = room2;
+        }
+
+        public object Clone()
+        {
+            return this;
         }
 
         public override void Enter()
@@ -24,6 +29,12 @@ namespace MazeGame
         public Room OtherSideFrom(Room room)
         {
             return null;
+        }
+
+        public void Initialize(Room room1, Room room2)
+        {
+            this.room1 = room1;
+            this.room2 = room2;
         }
     }
 }

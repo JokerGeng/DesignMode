@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MazeGame
 {
-    public class Maze
+    public class Maze:ICloneable
     {
         List<Room> rooms = new List<Room>();
         public Maze()
@@ -17,6 +17,11 @@ namespace MazeGame
         public void AddRoom(Room room)
         {
             rooms.Add(room);
+        }
+
+        public object Clone()
+        {
+            return this;
         }
 
         public Room GetRoom(int roomId)
