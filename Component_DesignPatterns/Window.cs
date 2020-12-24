@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Component_DesignPatterns
+namespace Decorator_DesignPatterns
 {
     public class Window
     {
