@@ -10,12 +10,12 @@ namespace Bridge_DesignMode
     {
         public IconWindow(View view):base(view)
         {
-
+            
         }
 
         public override void DrawContents()
         {
-            WindowImp imp = GetWindowImp();
+            WindowImp imp = GetWindowImp(new WindowFactoryIconWindowImp());
             if(imp!=null)
             {
                 imp.DeviceBitmap();

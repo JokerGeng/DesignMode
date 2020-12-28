@@ -6,26 +6,12 @@ using System.Threading.Tasks;
 
 namespace Bridge_DesignMode
 {
-    public class View
+    public abstract class View
     {
-        public View()
-        {
+        public abstract void GetOrigin();
 
-        }
+        public abstract void GetExtent();
 
-        public void GetOrigin()
-        {
-
-        }
-
-        public void GetExtent()
-        {
-
-        }
-
-        public void DrawOn()
-        {
-
-        }
+        public abstract void DrawOn();
     }
 }

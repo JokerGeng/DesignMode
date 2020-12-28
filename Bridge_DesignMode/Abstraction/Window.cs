@@ -8,20 +8,26 @@ namespace Bridge_DesignMode
 {
     public class Window
     {
-        private WindowImp imp;
-        private View view;
+        private WindowImp _imp;
+        private View _contents;
 
         public Window(View view)
         {
-            this.view = view;
+            this._contents = view;
         }
+
 
         //requests handle by window
+        /// <summary>
+        /// 各自的实现
+        /// </summary>
         public virtual void DrawContents()
         {
-
+            
         }
-        public virtual void Opne()
+
+
+        public virtual void Open()
         {
 
         }
@@ -42,15 +48,14 @@ namespace Bridge_DesignMode
         }
 
         //requests forwarded to implementation
-
         public virtual void SetOrigin()
         {
-
+            _imp.ImpSetOrigin();
         }
 
         public virtual void SetExtent()
         {
-
+            _imp.ImpSetExtent();
         }
 
         public virtual void Raise()
@@ -70,7 +75,7 @@ namespace Bridge_DesignMode
 
         public virtual void DrawRect()
         {
-
+            _imp.DeviceRect();
         }
 
         public virtual void DrawPolygon()
@@ -80,20 +85,23 @@ namespace Bridge_DesignMode
 
         public virtual void DrawText()
         {
-
+            _imp.DeviceText();
         }
 
-        protected WindowImp GetWindowImp()
+
+
+        protected WindowImp GetWindowImp(WindowSystemFactory factory)
         {
-            if(imp==null)
+            if(_imp==null)
             {
-                imp = WindowFactory.GetInstance().MakeWindowImp(new WindowSystemFactory());
+                _imp = WindowFactory.GetInstance().MakeWindowImp(factory);
             }
-            return imp;
+            return _imp;
         }
+
         protected View GetView()
         {
-            return view;
+            return _contents;
         }
     }
 }

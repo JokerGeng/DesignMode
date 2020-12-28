@@ -6,46 +6,20 @@ using System.Threading.Tasks;
 
 namespace Bridge_DesignMode
 {
-    public class WindowImp
+    public interface WindowImp
     {
-        public WindowImp()
-        {
+         void ImpTop();
 
-        }
+         void ImpBottom();
 
-        public virtual void ImpTop()
-        {
+         void ImpSetExtent();
 
-        }
+         void ImpSetOrigin();
 
-        public virtual void ImpBottom()
-        {
+         void DeviceRect();
 
-        }
+         void DeviceText();
 
-        public virtual void ImpSetExtent()
-        {
-
-        }
-
-        public virtual void ImpSetOrigin()
-        {
-
-        }
-
-        public virtual void DeviceRect()
-        {
-
-        }
-
-        public virtual void DeviceText()
-        {
-
-        }
-
-        public virtual void DeviceBitmap()
-        {
-
-        }
+         void DeviceBitmap();
     }
 }

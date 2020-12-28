@@ -6,19 +6,14 @@ using System.Threading.Tasks;
 
 namespace Bridge_DesignMode
 {
-    public class IconWindowImp : WindowImp
+    public class PMWindowImp:WindowImp
     {
-        public void DeviceBitmap()
+        public PMWindowImp()
         {
-            throw new NotImplementedException();
+
         }
 
-        public void DeviceRect()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeviceText()
+        public void ImpTop()
         {
             throw new NotImplementedException();
         }
@@ -38,7 +33,17 @@ namespace Bridge_DesignMode
             throw new NotImplementedException();
         }
 
-        public void ImpTop()
+        public void DeviceText()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeviceRect()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeviceBitmap()
         {
             throw new NotImplementedException();
         }

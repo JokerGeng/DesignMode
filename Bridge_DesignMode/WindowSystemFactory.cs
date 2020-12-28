@@ -34,15 +34,12 @@ namespace Bridge_DesignMode
         }
     }
 
-    public class WindowSystemFactory
+    public  abstract class WindowSystemFactory
     {
-        public virtual WindowImp MakeWindowImp()
-        {
-            return new WindowImp();
-        }
+        public abstract WindowImp MakeWindowImp();
     }
 
-    public class WindowFactoryXWindowImp: WindowSystemFactory
+    public class WindowFactoryIconWindowImp: WindowSystemFactory
     {
         public override WindowImp MakeWindowImp()
         {

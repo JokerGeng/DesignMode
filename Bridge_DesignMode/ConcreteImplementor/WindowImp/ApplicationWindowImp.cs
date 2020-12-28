@@ -8,19 +8,39 @@ namespace Bridge_DesignMode
 {
     public class ApplicationWindowImp : WindowImp
     {
-        public ApplicationWindowImp()
+        public void DeviceBitmap()
         {
-
+            throw new NotImplementedException();
         }
 
-        public override void DeviceBitmap()
+        public void DeviceRect()
         {
-            //具体操作
+            throw new NotImplementedException();
         }
 
-        public override void DeviceRect()
+        public void DeviceText()
         {
-            //具体操作
+            throw new NotImplementedException();
+        }
+
+        public void ImpBottom()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ImpSetExtent()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ImpSetOrigin()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ImpTop()
+        {
+            throw new NotImplementedException();
         }
     }
 }
