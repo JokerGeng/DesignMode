@@ -46,7 +46,7 @@
     <Compile Include="ConcreteImplementor\WindowImp\ApplicationWindowImp.cs" />
     <Compile Include="ConcreteImplementor\Window\ApplicationWindow.cs" />
     <Compile Include="ConcreteImplementor\Window\IconWindow.cs" />
-    <Compile Include="ConcreteImplementor\Window\PMWindow.cs" />
+    <Compile Include="ConcreteImplementor\WindowImp\PMWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementor\View.cs" />
