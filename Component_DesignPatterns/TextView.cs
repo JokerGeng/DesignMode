@@ -6,19 +6,6 @@ using System.Threading.Tasks;
 
 namespace Decorator_DesignPatterns
 {
-    public class Window
-    {
-        public Window()
-        {
-
-        }
-
-        public void SetContents(VisualComponent component)
-        {
-            component.Draw();
-        }
-    }
-
     public class TextView:VisualComponent
     {
         public TextView()
@@ -28,7 +15,7 @@ namespace Decorator_DesignPatterns
 
         public override void Draw()
         {
-            
+            Console.WriteLine("TextView Draw");
         }
 
         public override void Resize()

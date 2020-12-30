@@ -14,10 +14,9 @@ namespace Decorator_DesignPatterns
     {
         static void Main(string[] args)
         {
-            Window window = new Window();
             TextView textView = new TextView();
 
-            window.SetContents(new BorderDecorator(new ScrollDecorator(textView), 1));
+            SetContents(new BorderDecorator(new ScrollDecorator(textView), 1));
 
             // 我买了个苹果手机
             Phone phone = new ApplePhone();
@@ -40,6 +39,11 @@ namespace Decorator_DesignPatterns
             applePhoneWithAccessoriesAndSticker.Print();
             Console.ReadLine();
             Console.Read();
+        }
+
+        static void SetContents(VisualComponent component)
+        {
+            component.Draw();
         }
     }
 

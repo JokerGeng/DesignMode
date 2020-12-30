@@ -17,8 +17,8 @@ namespace Decorator_DesignPatterns
 
         public override void Draw()
         {
-            Console.WriteLine("Start Draw Border");
             base.Draw();
+            Console.WriteLine("Start Draw Border");
             DrawBorder(Width);
             Console.WriteLine("End Draw Border");
         }
@@ -30,7 +30,7 @@ namespace Decorator_DesignPatterns
 
         void DrawBorder(int width)
         {
-            Console.WriteLine("Draw Border");
+            Console.WriteLine("Drawing Border");
         }
     }
 }

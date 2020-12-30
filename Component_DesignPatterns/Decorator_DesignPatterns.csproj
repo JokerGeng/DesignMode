@@ -49,7 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScrollDecorator.cs" />
     <Compile Include="Patterns\VisualComponent.cs" />
-    <Compile Include="Window.cs" />
+    <Compile Include="TextView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

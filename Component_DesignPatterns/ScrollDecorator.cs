@@ -15,8 +15,8 @@ namespace Decorator_DesignPatterns
 
         public override void Draw()
         {
-            Console.WriteLine("Start Draw Scroll");
             base.Draw();
+            Console.WriteLine("Start Draw Scroll");
             DrawScroll();
             Console.WriteLine("End Draw Scroll");
         }
@@ -28,7 +28,7 @@ namespace Decorator_DesignPatterns
 
         void DrawScroll()
         {
-            Console.WriteLine("Draw Scroll");
+            Console.WriteLine("Drawing Scroll");
         }
     }
 }
