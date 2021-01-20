@@ -10,6 +10,7 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Comsition method");
             SimpleCompositor simple = new SimpleCompositor();
             TexCompositor tex = new TexCompositor();
             ArrayCompositor array = new ArrayCompositor();
@@ -24,6 +25,26 @@ namespace StrategyPattern
             composition.ChnageStrategy(array);
             composition.Repair();
             composition.Repair(null);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            Console.WriteLine("Abstract Compositor method");
+
+            Compositor compositor = new SimpleCompositor();
+            Component component = new Component();
+            compositor.Compose();
+            compositor.Compose(component);
+            Console.WriteLine();
+            compositor = new TexCompositor();
+            compositor.Compose();
+            compositor.Compose(component);
+            Console.WriteLine();
+            compositor = new ArrayCompositor();
+            compositor.Compose();
+            compositor.Compose(component);
 
             Console.Read();
         }
