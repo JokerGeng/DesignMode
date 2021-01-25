@@ -4,16 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StatePattern
+namespace TemplateMethodPattern
 {
     class Program
     {
         static void Main(string[] args)
         {
-            TCPConnection tcp = new TCPConnection();//TCPClosed
-            tcp.ActiveOpen();
-            tcp.ChangedState(TCPListen.GetInstance());
-            tcp.Close();
+            View myView = new MyView();
+            myView.Display();
+
+            Console.WriteLine();
+
+            View otherView = new OtherView();
+            otherView.Display();
             Console.Read();
         }
     }

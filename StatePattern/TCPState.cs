@@ -25,7 +25,7 @@ namespace StatePattern
 
         public virtual void Close(TCPConnection connection)
         {
-
+            Console.WriteLine("Close tcp");
         }
 
         public virtual void Send(TCPConnection connection)

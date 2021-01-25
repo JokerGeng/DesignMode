@@ -52,6 +52,7 @@ namespace StatePattern
 
         public void ChangedState(TCPState state)
         {
+            Console.WriteLine($"{_tcpstate.GetType().Name} changed to {state.GetType().Name}");
             _tcpstate = state;
         }
     }
