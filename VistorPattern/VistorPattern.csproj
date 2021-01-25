@@ -49,6 +49,7 @@
     <Compile Include="Equipment\FloppyDisk.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitor\NameVisitor.cs" />
     <Compile Include="Visitor\PriceVisitor.cs" />
   </ItemGroup>
   <ItemGroup>

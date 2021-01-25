@@ -22,5 +22,10 @@ namespace VistorPattern
         {
             return 1.5;
         }
+        
+        public double CalPrice()
+        {
+            return 1.5 * 3;
+        }
     }
 }

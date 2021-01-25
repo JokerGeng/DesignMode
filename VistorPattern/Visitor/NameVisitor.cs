@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace VistorPattern
 {
-    public class PriceVisitor:EquipmentVisitor
+    public class NameVisitor:EquipmentVisitor
     {
-        public double Total { get; set; }
-
         public override void VisitCard(Card card)
         {
-            Total += card.NetPrice();
+            Console.WriteLine($"I am {card.Name}");
         }
 
         public override void VisitFloppyDisk(FloppyDisk floppyDisk)
         {
-            Total += floppyDisk.CalPrice();
+            Console.WriteLine($"I am {floppyDisk.Name}");
         }
     }
 }

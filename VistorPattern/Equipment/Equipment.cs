@@ -18,6 +18,7 @@ namespace VistorPattern
         {
             
         }
+        
 
         public virtual double NetPrice()
         {

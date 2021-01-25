@@ -13,14 +13,20 @@ namespace VistorPattern
             Equipment card = new Card("card");
             Equipment floppyDisk = new FloppyDisk("Disk");
 
-            PriceVisitor visitor = new PriceVisitor();
+            PriceVisitor priceVisitor = new PriceVisitor();
+            NameVisitor nameVisitor = new NameVisitor();
 
-            Console.WriteLine($"Visitor initialize price:{visitor.Total}");
+            Console.WriteLine($"PriceVisitor initialize price:{priceVisitor.Total}");
             Console.WriteLine("excute equipment accept later:");
-            card.Accept(visitor);
-            floppyDisk.Accept(visitor);
+            card.Accept(priceVisitor);
+            floppyDisk.Accept(priceVisitor);
 
-            Console.WriteLine($"Visitor all Totla:{visitor.Total}");
+            Console.WriteLine($"PriceVisitor all Totla:{priceVisitor.Total}");
+
+
+            card.Accept(nameVisitor);
+            floppyDisk.Accept(nameVisitor);
+
             Console.Read();
         }
     }
