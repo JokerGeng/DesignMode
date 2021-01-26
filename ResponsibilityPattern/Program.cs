@@ -10,21 +10,15 @@ namespace ResponsibilityPattern
     {
         static void Main(string[] args)
         {
-            Application application = new Application(3);
-            Dialog dialog = new Dialog(application, 1);
-            Button button = new Button(dialog, 2);
-
-            button.HandleHelp();
-
             //请求
             PurchaseRequest requestTelphone = new PurchaseRequest(4000.0, "Telphone");
             PurchaseRequest requestSoftware = new PurchaseRequest(10000.0, "Visual Studio");
             PurchaseRequest requestComputers = new PurchaseRequest(40000.0, "Computers");
 
             //批准人
-            Approver manager = new Manager("Manager");
-            Approver vicePresident = new VicePresident("VicePresident");
-            Approver president = new President("President");
+            Approver president = new President("President",null);
+            Approver vicePresident = new VicePresident("VicePresident", president);
+            Approver manager = new Manager("Manager", vicePresident);
 
             //下个责任人
             manager.NextApprover = vicePresident;
@@ -57,9 +51,10 @@ namespace ResponsibilityPattern
     {
         public Approver NextApprover { get; set; }
         public string Name { get; set; }
-        public Approver(string name)
+        public Approver(string name, Approver nextApprover)
         {
             this.Name = name;
+            this.NextApprover = nextApprover;
         }
         public abstract void ProcessRequest(PurchaseRequest request);
     }
@@ -67,8 +62,8 @@ namespace ResponsibilityPattern
     // ConcreteHandler
     public class Manager : Approver
     {
-        public Manager(string name)
-            : base(name)
+        public Manager(string name, Approver nextApprover)
+            : base(name, nextApprover)
         { }
 
         public override void ProcessRequest(PurchaseRequest request)
@@ -79,7 +74,7 @@ namespace ResponsibilityPattern
             }
             else if (NextApprover != null)
             {
-                NextApprover.ProcessRequest(request);
+                NextApprover?.ProcessRequest(request);
             }
         }
     }
@@ -87,8 +82,8 @@ namespace ResponsibilityPattern
     // ConcreteHandler,副总
     public class VicePresident : Approver
     {
-        public VicePresident(string name)
-            : base(name)
+        public VicePresident(string name, Approver nextApprover)
+            : base(name, nextApprover)
         {
         }
         public override void ProcessRequest(PurchaseRequest request)
@@ -99,7 +94,7 @@ namespace ResponsibilityPattern
             }
             else if (NextApprover != null)
             {
-                NextApprover.ProcessRequest(request);
+                NextApprover?.ProcessRequest(request);
             }
         }
     }
@@ -107,8 +102,8 @@ namespace ResponsibilityPattern
     // ConcreteHandler，总经理
     public class President : Approver
     {
-        public President(string name)
-            : base(name)
+        public President(string name, Approver nextApprover)
+            : base(name, nextApprover)
         { }
         public override void ProcessRequest(PurchaseRequest request)
         {
