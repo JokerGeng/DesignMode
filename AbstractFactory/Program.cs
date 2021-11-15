@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FactoryMethod
+namespace AbstractFactory
 {
     //工厂方法只有一个产品抽象类,而抽象工厂具有多个产品抽象类
     //在抽象工厂中只有一个抽象产品时,抽象工厂退化为工厂方法
@@ -10,16 +10,15 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
-            PotatoFactory potatoFactory = new PotatoFactory();
-            TomatoFactory tomatoFactory = new TomatoFactory();
+            YunNanFactory yunNan = new YunNanFactory();
+            YaBo yunNanYaBo = yunNan.CreateYaBo();
+            yunNanYaBo.Print();
 
-            var potato = potatoFactory.Create();
-            potato.Print();
-
-            var tomato = tomatoFactory.Create();
-            tomato.Print();
-
-            //扩展时，只需实现其它菜单及对应工厂即可
+            SiChuanFactory siChuan = new SiChuanFactory();
+            YaBo siChuanYaBo = siChuan.CreateYaBo();
+            siChuanYaBo.Print();
+            YaJia siChuanYaJia = siChuan.CreateYaJia();
+            siChuanYaJia.Print();
 
             Console.Read();
         }
