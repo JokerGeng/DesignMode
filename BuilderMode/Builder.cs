@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BuilderMode
 {
+    //抽象创建产品需要的各个部件
     abstract class Builder
     {
         public abstract void BuildCPU();

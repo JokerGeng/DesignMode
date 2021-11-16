@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace BuilderMode
 {
     //导演类的作用是规定创建产品类的流程/装配过程
-    class Director
+    class OtherDirector
     {
         public void CreatComputer(Builder builder)
         {
-            builder.BuildCPU();
             builder.BuildMainBoard();
+            builder.BuildCPU();
         }
     }
 }
