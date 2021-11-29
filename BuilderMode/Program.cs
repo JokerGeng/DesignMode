@@ -19,6 +19,25 @@ namespace BuilderMode
             var accerComputer = accerBuilder.GetComputer();
             accerComputer.ShowComputer();
 
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            var dellBuilder1 = new DellComputerBuilder();
+            var accerBuilder1 = new AccerComputerBuilder();
+
+            Director director = new Director();
+            director.CreatComputer(dellBuilder1);
+            dellComputer = dellBuilder1.GetComputer();
+            dellComputer.ShowComputer();
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            director.CreatComputer(accerBuilder1);
+            accerComputer = accerBuilder1.GetComputer();
+            accerComputer.ShowComputer();
+
             Console.Read();
         }
     }
