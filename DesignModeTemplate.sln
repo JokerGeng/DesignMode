@@ -59,7 +59,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Struct", "Struct", "{C2CFDE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterMode", "AdapterMode\AdapterMode.csproj", "{1CA2E2CF-DC60-4BC2-A41D-6EC20E1CB5B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeMode", "BridgeMode\BridgeMode.csproj", "{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeMode", "BridgeMode\BridgeMode.csproj", "{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeMode", "CompositeMode\CompositeMode.csproj", "{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +195,7 @@ Global
 		{C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21} = {D0887913-342C-4104-8FA7-64E35568E48A}
 		{1CA2E2CF-DC60-4BC2-A41D-6EC20E1CB5B6} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
 		{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
+		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7FE3C97-12E2-41D6-BD04-586254F0B6E3}
