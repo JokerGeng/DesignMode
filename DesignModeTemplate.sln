@@ -61,7 +61,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterMode", "AdapterMode\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeMode", "BridgeMode\BridgeMode.csproj", "{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeMode", "CompositeMode\CompositeMode.csproj", "{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeMode", "CompositeMode\CompositeMode.csproj", "{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorMode", "DecoratorMode\DecoratorMode.csproj", "{922A1895-883E-459F-A1A6-6CDA6B437EF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922A1895-883E-459F-A1A6-6CDA6B437EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922A1895-883E-459F-A1A6-6CDA6B437EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922A1895-883E-459F-A1A6-6CDA6B437EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922A1895-883E-459F-A1A6-6CDA6B437EF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,6 +202,7 @@ Global
 		{1CA2E2CF-DC60-4BC2-A41D-6EC20E1CB5B6} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
 		{3EA7A7A2-D94A-43FB-AD19-2F5D1DE21511} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
 		{FA3E1D2E-6303-420C-ACB6-592F731F1DC8} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
+		{922A1895-883E-459F-A1A6-6CDA6B437EF4} = {C2CFDE73-E1C7-43D6-9B03-B2A8AD14BC21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7FE3C97-12E2-41D6-BD04-586254F0B6E3}
