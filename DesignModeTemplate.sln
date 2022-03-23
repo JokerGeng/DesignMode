@@ -75,7 +75,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Begavioral", "Begavioral", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityMode", "ChainOfResponsibilityMode\ChainOfResponsibilityMode.csproj", "{A82D7352-B9E8-4068-9B5D-ABA7516889B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandMode", "CommandMode\CommandMode.csproj", "{1C21BF59-785C-4C74-B28D-3E00AB8E8D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandMode", "CommandMode\CommandMode.csproj", "{1C21BF59-785C-4C74-B28D-3E00AB8E8D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteartorMode", "IteartorMode\IteartorMode.csproj", "{058E045B-02ED-44E7-B5A8-834DA9F10FE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -203,6 +205,10 @@ Global
 		{1C21BF59-785C-4C74-B28D-3E00AB8E8D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C21BF59-785C-4C74-B28D-3E00AB8E8D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C21BF59-785C-4C74-B28D-3E00AB8E8D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058E045B-02ED-44E7-B5A8-834DA9F10FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058E045B-02ED-44E7-B5A8-834DA9F10FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058E045B-02ED-44E7-B5A8-834DA9F10FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058E045B-02ED-44E7-B5A8-834DA9F10FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -241,6 +247,7 @@ Global
 		{8847BEF1-F27E-49D5-93E9-E7341DC14DBA} = {D0887913-342C-4104-8FA7-64E35568E48A}
 		{A82D7352-B9E8-4068-9B5D-ABA7516889B8} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 		{1C21BF59-785C-4C74-B28D-3E00AB8E8D74} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
+		{058E045B-02ED-44E7-B5A8-834DA9F10FE0} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7FE3C97-12E2-41D6-BD04-586254F0B6E3}
