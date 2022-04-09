@@ -87,6 +87,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverMode", "ObserverMod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMode", "StateMode\StateMode.csproj", "{1B81D7FA-6CEB-4B5A-8829-7723AF7E8809}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyMode", "StrategyMode\StrategyMode.csproj", "{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{1B81D7FA-6CEB-4B5A-8829-7723AF7E8809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B81D7FA-6CEB-4B5A-8829-7723AF7E8809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B81D7FA-6CEB-4B5A-8829-7723AF7E8809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -276,6 +282,7 @@ Global
 		{ABAE8994-562D-4BEE-B835-E276362D35D2} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 		{056D7045-D986-4F66-994E-77402C70D4D8} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 		{1B81D7FA-6CEB-4B5A-8829-7723AF7E8809} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
+		{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7FE3C97-12E2-41D6-BD04-586254F0B6E3}
