@@ -17,5 +17,10 @@ namespace CommandMode
         {
             _command.Execute();
         }
+
+        public void ExecuteCommand(ICommand command)
+        {
+            command.Execute();
+        }
     }
 }

@@ -16,8 +16,9 @@ namespace CommandMode
 
 
             ICommand paste = new PasteCommand(doc);
-            invoker.SetCommand(paste);
-            invoker.ExecuteCommand();
+            //invoker.SetCommand(paste);
+            //invoker.ExecuteCommand();
+            invoker.ExecuteCommand(paste);
 
             Console.Read();
         }
