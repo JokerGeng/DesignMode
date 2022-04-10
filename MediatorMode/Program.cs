@@ -18,9 +18,12 @@ namespace MediatorMode
 
             //模拟操作
             _fontList.Changed();
+            //mediator.WidgetChanged(_fontList);
 
             _ok.HandleMouse(null);
+            //mediator.WidgetChanged(_ok);
             _cancel.HandleMouse(null);
+            //mediator.WidgetChanged(_cancel);
 
             Console.Read();
         }
