@@ -91,6 +91,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyMode", "StrategyMod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMode", "TemplateMode\TemplateMode.csproj", "{C3836951-7C58-4F9C-A79E-8503D9426A9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorMode", "VisitorMode\VisitorMode.csproj", "{1C70C11F-1028-4B36-91FC-6B0D7CD66CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +247,10 @@ Global
 		{C3836951-7C58-4F9C-A79E-8503D9426A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3836951-7C58-4F9C-A79E-8503D9426A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3836951-7C58-4F9C-A79E-8503D9426A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C70C11F-1028-4B36-91FC-6B0D7CD66CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C70C11F-1028-4B36-91FC-6B0D7CD66CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C70C11F-1028-4B36-91FC-6B0D7CD66CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C70C11F-1028-4B36-91FC-6B0D7CD66CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -290,6 +296,7 @@ Global
 		{1B81D7FA-6CEB-4B5A-8829-7723AF7E8809} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 		{A573ED15-E5D2-4097-BBEE-ECE08AAE32DF} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 		{C3836951-7C58-4F9C-A79E-8503D9426A9D} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
+		{1C70C11F-1028-4B36-91FC-6B0D7CD66CDA} = {8847BEF1-F27E-49D5-93E9-E7341DC14DBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7FE3C97-12E2-41D6-BD04-586254F0B6E3}
